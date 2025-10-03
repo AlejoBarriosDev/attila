@@ -88,6 +88,86 @@
         ],
         "default": "Default",
         "group": "post"
+      },
+      "body_font": {
+        "type": "select",
+        "options": [
+          "Inter",
+          "Roboto",
+          "Lato"
+        ],
+        "default": "Inter",
+        "group": "typography"
+      },
+      "heading_font": {
+        "type": "select",
+        "options": [
+          "Inter",
+          "Roboto",
+          "Lato"
+        ],
+        "default": "Inter",
+        "group": "typography"
+      },
+      "light_background_main": {
+        "type": "color",
+        "default": "#FFFFFF",
+        "group": "colors"
+      },
+      "light_background_secondary": {
+        "type": "color",
+        "default": "#F7F8FA",
+        "group": "colors"
+      },
+      "light_background_contrast": {
+        "type": "color",
+        "default": "#E1E3E6",
+        "group": "colors"
+      },
+      "light_content_lead": {
+        "type": "color",
+        "default": "#000000",
+        "group": "colors"
+      },
+      "light_content_main": {
+        "type": "color",
+        "default": "#222426",
+        "group": "colors"
+      },
+      "light_content_secondary": {
+        "type": "color",
+        "default": "#73777D",
+        "group": "colors"
+      },
+      "dark_background_main": {
+        "type": "color",
+        "default": "#222426",
+        "group": "colors"
+      },
+      "dark_background_secondary": {
+        "type": "color",
+        "default": "#1D1F20",
+        "group": "colors"
+      },
+      "dark_background_contrast": {
+        "type": "color",
+        "default": "#3B3D40",
+        "group": "colors"
+      },
+      "dark_content_lead": {
+        "type": "color",
+        "default": "#FFFFFF",
+        "group": "colors"
+      },
+      "dark_content_main": {
+        "type": "color",
+        "default": "#E1E3E6",
+        "group": "colors"
+      },
+      "dark_content_secondary": {
+        "type": "color",
+        "default": "#909499",
+        "group": "colors"
       }
     }
   },

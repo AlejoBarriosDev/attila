@@ -58,6 +58,40 @@
 		{{/if}}
 	{{/match}}
 
+	<style>
+		:root {
+			{{#if @custom.body_font}}--gh-font-body: '{{@custom.body_font}}', sans-serif;{{/if}}
+			{{#if @custom.heading_font}}--gh-font-heading: '{{@custom.heading_font}}', sans-serif;{{/if}}
+
+			{{#if @custom.light_background_main}}--color-background-main: {{@custom.light_background_main}};{{/if}}
+			{{#if @custom.light_background_secondary}}--color-background-secondary: {{@custom.light_background_secondary}};{{/if}}
+			{{#if @custom.light_background_contrast}}--color-background-contrast: {{@custom.light_background_contrast}};{{/if}}
+			{{#if @custom.light_content_lead}}--color-content-lead: {{@custom.light_content_lead}};{{/if}}
+			{{#if @custom.light_content_main}}--color-content-main: {{@custom.light_content_main}};{{/if}}
+			{{#if @custom.light_content_secondary}}--color-content-secondary: {{@custom.light_content_secondary}};{{/if}}
+		}
+
+		.theme-dark:root {
+			{{#if @custom.dark_background_main}}--color-background-main: {{@custom.dark_background_main}};{{/if}}
+			{{#if @custom.dark_background_secondary}}--color-background-secondary: {{@custom.dark_background_secondary}};{{/if}}
+			{{#if @custom.dark_background_contrast}}--color-background-contrast: {{@custom.dark_background_contrast}};{{/if}}
+			{{#if @custom.dark_content_lead}}--color-content-lead: {{@custom.dark_content_lead}};{{/if}}
+			{{#if @custom.dark_content_main}}--color-content-main: {{@custom.dark_content_main}};{{/if}}
+			{{#if @custom.dark_content_secondary}}--color-content-secondary: {{@custom.dark_content_secondary}};{{/if}}
+		}
+
+		@media (prefers-color-scheme: dark) {
+			html:not(.theme-light):root {
+				{{#if @custom.dark_background_main}}--color-background-main: {{@custom.dark_background_main}};{{/if}}
+				{{#if @custom.dark_background_secondary}}--color-background-secondary: {{@custom.dark_background_secondary}};{{/if}}
+				{{#if @custom.dark_background_contrast}}--color-background-contrast: {{@custom.dark_background_contrast}};{{/if}}
+				{{#if @custom.dark_content_lead}}--color-content-lead: {{@custom.dark_content_lead}};{{/if}}
+				{{#if @custom.dark_content_main}}--color-content-main: {{@custom.dark_content_main}};{{/if}}
+				{{#if @custom.dark_content_secondary}}--color-content-secondary: {{@custom.dark_content_secondary}};{{/if}}
+			}
+		}
+	</style>
+
 	{{ghost_head}}
 </head>
 
